@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <ListPreference
+        android:entries="@array/control_type_names"
+        android:entryValues="@array/control_type_values"
+        android:key="control"
+        android:title="Control Type"
+        android:summary="Select type of game control" >
+    </ListPreference>
+    
+     <ListPreference
+        android:entries="@array/vibro_type_names"
+        android:entryValues="@array/vibro_type_values"
+        android:key="vibro"
+        android:title="Vibrol Type"
+         android:summary="Select vibration type" >
+    </ListPreference>
+
+</PreferenceScreen>

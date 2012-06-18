@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:weightSum="100"
+              android:background="@drawable/menu_background">
+
+    <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="40"
+            android:contentDescription="@string/main_menu_logo"
+            android:src="@drawable/game_logo"/>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:gravity="center|center_vertical"
+            android:orientation="vertical">
+
+        <Button
+                android:id="@+id/play_btn"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:background="@drawable/menu_button"
+                android:text="@string/main_menu_play_btn"
+                android:textColor="#FFFFFF"
+                android:textSize="26dp"
+                android:width="200dp"/>
+
+        <Button
+                android:id="@+id/settings_btn"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/menu_button"
+                android:text="@string/main_menu_sett_btn"
+                android:textColor="#FFFFFF"
+                android:textSize="26dp"
+                android:width="200dp"/>
+
+        <Button
+                android:id="@+id/scores_btn"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/menu_button"
+                android:text="@string/main_menu_scores_btn"
+                android:textColor="#FFFFFF"
+                android:textSize="26dp"
+                android:width="200dp"/>
+
+        <Button
+                android:id="@+id/exit_btn"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/menu_button"
+                android:text="@string/main_menu_exit_btn"
+                android:textColor="#FFFFFF"
+                android:textSize="26dp"
+                android:width="200dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,2 +1,0 @@
-Simple-Android-Game-java
-========================

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="main_menu_logo">Game logo image</string>
+    <string name="main_menu_play_btn">PLAY</string>
+    <string name="main_menu_sett_btn">SETTINGS</string>
+    <string name="main_menu_scores_btn">SCORES</string>
+    <string name="main_menu_exit_btn">EXIT</string>
+    <string name="app_name">Android Simple Game (Java version)</string>
+    <string name="scores_screen_menu">MENU</string>
+    <string name="scores_screen_again">AGAIN</string>
+
+</resources>

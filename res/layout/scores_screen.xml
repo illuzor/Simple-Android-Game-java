@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:gravity="center_vertical">
+    <TextView android:id="@+id/sc_screen_tv_scores"
+              android:text="YOUR SCORE:"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:textSize="30dp"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginBottom="20dp"/>
+
+    <Button
+            android:id="@+id/sc_screen_menu"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:background="@drawable/menu_button"
+            android:text="@string/scores_screen_menu"
+            android:textColor="#FFFFFF"
+            android:textSize="26dp"
+            android:width="200dp"
+            android:layout_gravity="center_horizontal"
+            />
+    <Button
+            android:id="@+id/sc_screen_again"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:background="@drawable/menu_button"
+            android:text="@string/scores_screen_again"
+            android:textColor="#FFFFFF"
+            android:textSize="26dp"
+            android:width="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"/>
+
+</LinearLayout>
