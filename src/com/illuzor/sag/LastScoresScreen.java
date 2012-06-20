@@ -5,6 +5,11 @@ import android.os.Bundle;
 import android.widget.TextView;
 import com.illuzor.sag.tools.DatabaseManager;
 
+/**
+ * @author illuzor
+ * экран для отображения таблицы очков, которые берутся из базы данных
+ */
+
 public class LastScoresScreen extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

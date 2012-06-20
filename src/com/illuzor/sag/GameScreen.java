@@ -14,10 +14,15 @@ import android.view.*;
 
 import java.util.List;
 
+/**
+ * @author illuzor
+ * Activity игрового экрана
+ */
+
 public class GameScreen extends Activity implements View.OnTouchListener, SensorEventListener {
 
-    boolean sensorActivated = false;
-    GameView gameView;
+    boolean sensorActivated = false; // активирован ли сенсор(акселерометр)
+    GameView gameView; // игровой View
     SensorManager sensorManager;
     Sensor accelerometer;
     Display display;
@@ -44,6 +49,8 @@ public class GameScreen extends Activity implements View.OnTouchListener, Sensor
         super.onResume();
     }
 
+    // обработчик прикосновений.
+    // двигаем платформу к .x координате пальца
     @Override
     public boolean onTouch(View view, MotionEvent e) {
         gameView.movePlatformTo((int) e.getX());
@@ -56,11 +63,10 @@ public class GameScreen extends Activity implements View.OnTouchListener, Sensor
         finish();
     }
 
+    // проверка метода ввода
     private void initControlType() {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-
         int controlType = Integer.parseInt(prefs.getString("control", "0"));
-
         switch (controlType) {
             case 0:
                 gameView.setOnTouchListener(this);
@@ -71,6 +77,7 @@ public class GameScreen extends Activity implements View.OnTouchListener, Sensor
         }
     }
 
+    // инициализация акселерометра
     private void initAccelerometer() {
         WindowManager mWindowManager = (WindowManager) getSystemService(WINDOW_SERVICE);
         display = mWindowManager.getDefaultDisplay();
@@ -91,6 +98,7 @@ public class GameScreen extends Activity implements View.OnTouchListener, Sensor
         }
     }
 
+    // показ экрана очков, вызвается из gameView
     public void showScores(int numScores) {
         Intent scoreScreenIntent = new Intent();
         scoreScreenIntent.setClass(this, ScoresScreen.class);
@@ -98,6 +106,7 @@ public class GameScreen extends Activity implements View.OnTouchListener, Sensor
         startActivity(scoreScreenIntent);
     }
 
+    // обработчик сенсора
     @Override
     public void onSensorChanged(SensorEvent e) {
         if (e.sensor.getType() != Sensor.TYPE_ACCELEROMETER)

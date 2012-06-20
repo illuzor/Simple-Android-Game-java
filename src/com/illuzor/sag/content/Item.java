@@ -4,12 +4,18 @@ package com.illuzor.sag.content;
 import android.graphics.Color;
 import com.illuzor.sag.constants.ItemType;
 
+/**
+ * @author illuzor
+ *
+ * Класс айтема. Хранит данные о положении и скорости
+ */
+
 public class Item {
 
-    public String itemType;
-    public int currentY, currentX;
-    public int color;
-    int speed;
+    public String itemType; // тип айтема
+    public int currentY, currentX; // координаты
+    public int color; // цвет
+    int speed; // скорость
 
     public Item(String itemType, int speed, int x) {
         this.itemType = itemType;
@@ -25,6 +31,7 @@ public class Item {
         }
     }
 
+    // увеличиваем значение .y координаты
     public void update() {
         currentY += speed;
     }

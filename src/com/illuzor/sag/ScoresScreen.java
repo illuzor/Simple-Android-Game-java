@@ -8,6 +8,11 @@ import android.widget.Button;
 import android.widget.TextView;
 import com.illuzor.sag.tools.DatabaseManager;
 
+/**
+ * @author illuzor
+ * экран отображения результата. показывается после проигрыша
+ */
+
 public class ScoresScreen extends Activity implements View.OnClickListener {
 
     public void onCreate(Bundle savedInstanceState) {

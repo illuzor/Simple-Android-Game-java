@@ -6,9 +6,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+/**
+ * @author illuzor
+ *
+ * Главное меню игры. 4 кнопки
+ */
+
 public class MainMenu extends Activity implements View.OnClickListener {
 
-    Button playButton, settingsButton, scoresButton, exitButton;
+    Button playButton, settingsButton, scoresButton, exitButton; // кнопки главного меню
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -17,6 +23,7 @@ public class MainMenu extends Activity implements View.OnClickListener {
         initButtons();
     }
 
+    // задаём view кнопкам и вешаем слушатель клика
     private void initButtons() {
         playButton = (Button) findViewById(R.id.play_btn);
         playButton.setOnClickListener(this);
@@ -31,22 +38,27 @@ public class MainMenu extends Activity implements View.OnClickListener {
         exitButton.setOnClickListener(this);
     }
 
+    // обработчик клика
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.play_btn:
+                // открытие игрового экрана
                 Intent gameScreen = new Intent("com.illuzor.sag.GAME_SCREEN");
                 startActivity(gameScreen);
                 break;
             case R.id.settings_btn:
+                // открытие экрана настроек
                 Intent scoresScreen = new Intent("com.illuzor.sag.SETTINGS_SCREEN");
                 startActivity(scoresScreen);
                 break;
             case R.id.scores_btn:
+                // открытие экрана с таблицей результатов
                 Intent lastScoresScreen = new Intent("com.illuzor.sag.LAST_SCORES_SCREEN");
                 startActivity(lastScoresScreen);
                 break;
             case R.id.exit_btn:
+                // выход из игры
                 android.os.Process.killProcess(android.os.Process.myPid());
                 break;
         }
