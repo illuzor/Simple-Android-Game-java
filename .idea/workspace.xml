@@ -73,15 +73,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ItemType.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/illuzor/sag/constants/ItemType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="73" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Item.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/illuzor/sag/content/Item.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -154,10 +145,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="28" selection-start="194" selection-end="194" vertical-scroll-proportion="0.06861756">
+            <state line="4" column="28" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="0.102926336">
               <folding />
             </state>
           </provider>
@@ -185,7 +185,6 @@
         <option value="$PROJECT_DIR$/src/com/illuzor/sag/tools/ScoresStorageManager.java" />
         <option value="$PROJECT_DIR$/res/layout/last_scores_screen.xml" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/src/com/illuzor/sag/MainMenu.java" />
         <option value="$PROJECT_DIR$/src/com/illuzor/sag/tools/DatabaseManager.java" />
         <option value="$PROJECT_DIR$/src/com/illuzor/sag/LastScoresScreen.java" />
@@ -196,6 +195,7 @@
         <option value="$PROJECT_DIR$/src/com/illuzor/sag/GameScreen.java" />
         <option value="$PROJECT_DIR$/src/com/illuzor/sag/GameView.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/README" />
       </list>
     </option>
   </component>
@@ -908,11 +908,6 @@
         <state line="247" column="16" selection-start="9696" selection-end="9696" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="203" selection-end="203" vertical-scroll-proportion="0.13723512" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/illuzor/sag/constants/ItemType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="73" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
@@ -978,7 +973,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="28" selection-start="194" selection-end="194" vertical-scroll-proportion="0.06861756">
+        <state line="4" column="28" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="0.102926336">
           <folding />
         </state>
       </provider>
